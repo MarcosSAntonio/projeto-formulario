@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Formulário Desenvolvedor</h1>
+
+    <form name="formCadastro" onsubmit=" validarFormulario()">
+
+        <label>name:</label>
+        <p>
+            <input type="name" id="nome" />
+        <p>
+            <label>Data de aneversario:</label>
+        <p>
+            <input type="number" id="idade" />
+        <p>
+            <label>Cargo:</label>
+        <p>
+            <input type="text" id="cargo" />
+        <p>
+            <label>Departamento:</label>
+        <p>
+            <input type="text" id="Departamento" />
+        <p>
+            <label>Linguagem de programação:</label>
+            <input type="text" id="Linguagem de programação" />
+
+
+
+            <button type="submit" onclick=" validarFormulario()">Cadastrar</button>
+
+    </form>
+    <script>
+
+        function validarFormulario() {
+
+            var nomePessoa = document.forms["formCadastro"]["nome"].value;
+
+            if (nomePessoa == "") {
+                alert("favor informar o seu nome!")
+                event.preventDefault();
+            } else {
+                alert("nome: " + nomePessoa);
+                event.preventDefault();
+            }
+            var idadeP = document.forms["formCadastro"]["idade"].value;
+
+            if (idadeP == "") {
+                alert("favor informar o seu idade" + idadeP);
+                event.preventDefault();
+            } else {
+                alert("idade: " + idadeP);
+                event.preventDefault();
+            }
+            var cargop = document.forms["formCadastro"]["texto"].value;
+
+            if (cargop == "") {
+                alert("favor informar o seu cargo " + cargop);
+                event.preventDefault();
+            } else {
+                alert("cargo: " + cargop);
+                event.preventDefault();
+            }
+            var Departamentop = document.forms["formCadastro"]["nome"].value;
+
+            if (Departamentop == "") {
+                alert("favor informar o seu departamento " + Departamentop);
+                event.preventDefault();
+            } else {
+                alert("departamento: " + Departamentop);
+                event.preventDefault();
+            }
+            var linguagemdeProgramação = document.forms["formCadastro"]["nome"].value;
+
+            if (linguagemdeProgramaçãop == "") {
+                alert("favor informar sua linguagem de programação " + linguagemdeProgramaçãop);
+                event.preventDefault();
+            } else {
+                alert("Linguagem de programação: " + linguagemdeProgramaçãop);
+                event.preventDefault();
+            }
+        }
+
+
+    </script>
+</body>
+
+
+<body>
+
+    <h1>Formulário Gerente</h1>
+
+    <form name="formCadastro" onsubmit=" validarFormulario()">
+
+
+        <label>name:</label>
+        <p>
+            <input type="text" id="nome" />
+        <p>
+            <label>Data de aniversario:</label>
+        <p>
+            <input type="number" id="idade" />
+        <p>
+            <label>Cargo:</label>
+        <p>
+            <input type="text" id="car" />
+        <p>
+            <label>Departamento:</label>
+        <p>
+            <input type="text" id="Departamento" />
+        <p>
+            <label>Linguagem de programação:</label>
+        <p>
+            <input type="text" id="Linguagem de programação" />
+
+            <button type="submit" onclick="validarFormulario()">Cadastrar</button>
+
+    </form>
+    <p>
+    <p>
+        <script>
+
+            function validarFormulario() {
+                var nomePessoa = document.forms["formCadastro"]["nome"].value
+
+                if (nomePessoa == "") {
+                    alert("favor informar o seu nome!")
+                    event.preventDefault();
+                } else {
+                    alert("nome: " + nomePessoa);
+                    event.preventDefault();
+                }
+                var idadeP = document.forms["formCadastro"]["idade"].value;
+
+                if (idadeP == "") {
+                    alert("favor informar o seu idade" + idadeP);
+                    event.preventDefault();
+                } else {
+                    alert("idade: " + idadeP);
+                    event.preventDefault();
+                }
+                var cargo2 = document.forms["formCadastro"]["cargo"].value;
+
+                if (cargo2 == "") {
+                    alert("favor informar o seu cargo " + cargo2);
+                    event.preventDefault();
+                } else {
+                    alert("cargo: " + cargo2);
+                    event.preventDefault();
+                }
+                var Departamentop = document.forms["formCadastro"]["Departamento"].value;
+
+                if (Departamentop == "") {
+                    alert("favor informar o seu departamento " + Departamentop);
+                    event.preventDefault();
+                } else {
+                    alert("departamento:" + Departamentop);
+                    event.preventDefault();
+
+                }
+
+                var linguagemdeProgramação = document.forms["formCadastro"]["nome"].value;
+
+                if (linguagemdeProgramaçãop == "") {
+                    alert("favor informar sua linguagem de programação " + linguagemdeProgramaçãop);
+                    event.preventDefault();
+                } else {
+                    alert("Linguagem de programação: " + linguagemdeProgramaçãop);
+                    event.preventDefault();
+                }
+            }
+
+
+        </script>
+</body>
+
+
+</html>
